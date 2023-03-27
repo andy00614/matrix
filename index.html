@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,14 @@
             margin: 0;
             overflow: hidden;
         }
+
         canvas {
             display: block;
         }
+
     </style>
 </head>
+
 <body>
     <canvas id="matrix"></canvas>
     <script defer src="/_vercel/insights/script.js"></script>
@@ -24,7 +28,7 @@
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
 
-        const symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#$%^&*()_+<>?/|}{[]";
+        const symbols = "My darling girl Huiyu";
         const columns = canvas.width / 10;
 
         const drops = [];
@@ -52,4 +56,5 @@
         setInterval(draw, 33);
     </script>
 </body>
+
 </html>
