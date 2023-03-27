@@ -20,7 +20,9 @@
 
 <body>
     <canvas id="matrix"></canvas>
+
     <script defer src="/_vercel/insights/script.js"></script>
+
     <script>
         const canvas = document.getElementById("matrix");
         const ctx = canvas.getContext("2d");
@@ -45,7 +47,7 @@
             for (let i = 0; i < drops.length; i++) {
                 const text = symbols.charAt(Math.floor(Math.random() * symbols.length));
                 ctx.fillText(text, i * 10, drops[i] * 10);
-
+                console.log(ctx)
                 if (drops[i] * 10 > canvas.height && Math.random() > 0.975) {
                     drops[i] = 0;
                 }
